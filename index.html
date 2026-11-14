@@ -6,10 +6,10 @@
 <title>Muslim Corps · Food Pantry, Refugee and Youth Programs in Arizona</title>
 <meta name="description" content="Muslim Corps volunteers run food pantries in 8 cities, welcome refugee families and mentor young leaders. Donate, volunteer or get help.">
 <meta name="theme-color" content="#FFFFFF">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2730%27 fill=%27%230E2A52%27 stroke=%27%23C3CBD1%27 stroke-width=%273%27/%3E%3Cpath d=%27M33 45C23.5 38.6 20.5 33.4 20.5 28.6a6.3 6.3 0 0 1 12.5-1.6a6.3 6.3 0 0 1 12.5 1.6C45.5 33.4 42.5 38.6 33 45Z%27 fill=%27%23E3A72F%27/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2730%27 fill=%27%230E2A52%27 stroke=%27%23C3CBD1%27 stroke-width=%273%27/%3E%3Cpath d=%27M33 45C23.5 38.6 20.5 33.4 20.5 28.6a6.3 6.3 0 0 1 12.5-1.6a6.3 6.3 0 0 1 12.5 1.6C45.5 33.4 42.5 38.6 33 45Z%27 fill=%27%23E5484D%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <style>
 :root{
   --teal:#0F5257;--teal-dark:#0B3E42;--gold:#E3A72F;--gold-dark:#D0941C;--terra:#C8553D;
@@ -686,12 +686,311 @@ input:focus-visible,select:focus-visible,textarea:focus-visible{border-color:var
 .bg-teal .btn-light{background:#fff;color:var(--navy);border-color:#fff}
 .bg-teal .btn-light:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
 .chips li{background:rgba(255,255,255,.14)}
+
+/* ================= Kind theme (template-inspired) ================= */
+:root{--navy:#0E2541;--teal:#0E2541;--blue:#0B76D1;--blue-2:#0A5FAD;--sky:#38BDF8;--sky-light:#EAF6FE;--sky-mid:#CDEBFC;--cream:#FFF8EC;
+ --gold:#F2B33D;--gold-dark:#E2A027;--ink:#2F3A48;--muted:#5B6878;--line:#E3EAF2;--sand:#F4F8FC;--charcoal:#0B1F38;
+ --f-head:'Plus Jakarta Sans','DM Sans',system-ui,sans-serif;--f-body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+ --r-card:24px;--shadow:0 1px 2px rgba(14,37,65,.04),0 12px 32px rgba(14,37,65,.06);--shadow-lift:0 24px 48px rgba(14,37,65,.12)}
+body{font-family:var(--f-body)}
+h1,h2,h3{font-family:var(--f-head);font-weight:800;letter-spacing:-.025em;color:var(--navy)}
+h2{font-size:clamp(30px,3.4vw,44px);line-height:1.12}
+.card-title,.event-title,.feature h3,.role-card h3,.person h3,.loc-card h3{font-family:var(--f-head);font-weight:700;color:var(--navy);letter-spacing:-.01em}
+.lead{color:var(--muted)}
+.bg-sand{background:var(--sand)}
+
+/* eyebrow pill */
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 10px;border-radius:999px;background:var(--sky-light);color:var(--blue-2);font:600 14px var(--f-body);margin-bottom:16px;letter-spacing:0}
+.eyebrow .icon{width:16px;height:16px}
+.bg-sand .eyebrow{background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
+.sec-head{margin-bottom:var(--s4)}
+.sec-head.center{margin-bottom:var(--s5)}
+.head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:var(--s3);flex-wrap:wrap;margin-bottom:var(--s4)}
+.head-row .sec-head{margin-bottom:0}
+.note-ph,.sample-label{font-size:14px;color:var(--muted);margin-top:var(--s2)}
+.sample-label{margin:-16px 0 var(--s3)}
+
+/* pill buttons */
+.btn{border-radius:999px;font-family:var(--f-body);font-weight:700;padding:0 26px}
+.btn-lg{padding:0 30px}
+.btn-primary{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.btn-primary:hover{background:var(--gold-dark);border-color:var(--gold-dark);transform:translateY(-1px)}
+.btn-secondary,.hero .btn-light,.photo-hero .btn-light{background:#fff;color:var(--navy);border:1.5px solid #CFD9E5}
+.btn-secondary:hover,.hero .btn-light:hover,.photo-hero .btn-light:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn-arrow{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;margin:0 -16px 0 6px}
+.btn-arrow .icon{width:16px!important;height:16px!important}
+.btn:hover .btn-arrow{transform:rotate(-45deg);transition:transform .2s}
+input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea,.money{border-radius:12px}
+
+/* top bar + header */
+.topbar{background:var(--navy);color:#DCE6F2;font-size:14px}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;min-height:44px;gap:var(--s2)}
+.topbar ul{display:flex;gap:var(--s4);list-style:none}
+.topbar li{display:flex;align-items:center;gap:8px}
+.topbar .icon{width:16px;height:16px;color:var(--sky)}
+.topbar a{color:#fff;text-decoration:none}
+.topbar a:hover{text-decoration:underline}
+.tb-help{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--gold)!important}
+.topbar :focus-visible{outline-color:#fff}
+@media (max-width:1023px){.topbar{display:none}}
+.site-header{border-bottom:1px solid var(--line);box-shadow:none}
+.nav-link{font-weight:600;color:var(--navy);border-radius:999px}
+.nav-link:hover{background:var(--sky-light)}
+.nav-link[aria-current="page"]{box-shadow:none;background:var(--sky-light);color:var(--blue-2)}
+.dropdown-menu.mega{width:640px;left:50%;transform:translateX(-35%);display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:12px;border-radius:24px;border:1px solid var(--line);box-shadow:0 30px 60px rgba(14,37,65,.16)}
+.dropdown-menu.mega[hidden]{display:none}
+.mega a{align-items:flex-start;gap:14px;padding:12px;border-radius:16px;min-height:0}
+.mega .mm-ic{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:14px;background:var(--sky-light);color:var(--blue);flex:none}
+.mega strong{display:block;font:700 16px var(--f-head);color:var(--navy)}
+.mega small{display:block;font-size:14px;line-height:1.4;color:var(--muted);font-weight:400;margin-top:2px}
+.mega .all{grid-column:1/-1;border-top:1px solid var(--line);margin-top:4px;padding-top:4px}
+.mega .all a{align-items:center;font-weight:700;color:var(--blue-2)}
+
+/* soft rounded panels for every page top */
+.hero::before,.photo-hero::before,.page-head::before{content:"";position:absolute;top:16px;bottom:16px;left:max(16px,calc((100% - 1248px)/2));right:max(16px,calc((100% - 1248px)/2));width:auto;height:auto;border-radius:32px;z-index:0;
+ background:radial-gradient(50% 70% at 100% 0%,var(--sky-mid) 0%,transparent 60%),radial-gradient(40% 60% at 0% 100%,#FFF1D6 0%,transparent 60%),linear-gradient(135deg,var(--sky-light) 0%,#F7FBFF 60%,var(--cream) 100%)}
+.page-head{position:relative;isolation:isolate;background:none;padding:96px 0 80px}
+.page-head::before{z-index:-1}
+.page-head .container{padding-left:max(48px,24px)}
+.photo-hero .ph-hero{right:max(56px,calc((100% - 1200px)/2 + 32px))!important;top:56px!important;bottom:56px!important;border:6px solid #fff;border-radius:24px!important;box-shadow:0 30px 60px rgba(14,37,65,.14)!important}
+.photo-hero .container{padding-left:max(48px,24px)}
+@media (max-width:1023px){
+ .hero::before,.photo-hero::before,.page-head::before{top:8px;bottom:8px;left:8px;right:8px;height:auto;width:auto;border-radius:24px}
+ .photo-hero .ph-hero{right:auto!important;top:auto!important;bottom:auto!important;margin:0 24px 32px}
+ .page-head{padding:64px 0 56px}
+}
+
+/* home hero */
+.hero-kind{padding:16px 0 0}
+.hero-kind>.container{max-width:1248px;padding:0 16px}
+.hk-panel{position:relative;overflow:hidden;isolation:isolate;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;border-radius:32px;padding:72px 56px;
+ background:radial-gradient(45% 65% at 100% 0%,var(--sky-mid) 0%,transparent 60%),radial-gradient(40% 60% at 0% 100%,#FFF1D6 0%,transparent 60%),linear-gradient(135deg,var(--sky-light) 0%,#F7FBFF 60%,var(--cream) 100%)}
+.hk-panel::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;border:1.5px dashed rgba(11,118,209,.18);right:-120px;bottom:-160px;z-index:-1}
+.hero-kind h1{font-size:clamp(42px,5.6vw,72px);line-height:1.04;margin-bottom:24px;position:relative;isolation:isolate}
+.hl{color:var(--blue);position:relative;white-space:nowrap}
+.hl::after{content:"";position:absolute;left:-2%;right:-2%;bottom:-.06em;height:.3em;z-index:-1;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 20' preserveAspectRatio='none'%3E%3Cpath d='M3 14C50 4 120 2 197 9' fill='none' stroke='%23F87171' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
+.hero-kind .hero-sub{font-size:20px;color:var(--muted);max-width:520px;margin-bottom:32px}
+.join{display:flex;align-items:center;gap:16px;margin-top:36px}
+.join p{margin:0;font-size:15px;color:var(--muted)}
+.join strong{color:var(--navy)}
+.avatars{display:flex}
+.avatars span{width:44px;height:44px;border-radius:50%;border:3px solid #fff;margin-left:-12px;display:inline-flex;align-items:center;justify-content:center;font:700 15px var(--f-head);color:var(--navy);background:linear-gradient(135deg,#FCE7C3,#F2B33D)}
+.avatars span:first-child{margin-left:0}
+.avatars span:nth-child(2){background:linear-gradient(135deg,#D9F0FD,#7DD3FC)}
+.avatars span:nth-child(3){background:linear-gradient(135deg,#E3E9F6,#B7C6E4)}
+.avatars span:last-child{background:var(--navy);color:#fff}
+.avatars .icon{width:18px;height:18px}
+.hero-art{position:relative;min-height:540px}
+.ha-main .ph{position:absolute;top:0;right:0;width:78%;height:88%;border-radius:200px 200px 28px 28px;border:6px solid #fff;box-shadow:0 30px 60px rgba(14,37,65,.14)}
+.ha-small .ph{position:absolute;left:0;bottom:0;width:44%;aspect-ratio:1/1;border-radius:24px;border:6px solid #fff;box-shadow:0 20px 40px rgba(14,37,65,.14)}
+.ha-small .ph-cap{display:none}
+.ha-main .ph-cap{left:24px;right:24px}
+.float-card{position:absolute;display:flex;align-items:center;gap:12px;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 20px 40px rgba(14,37,65,.14);max-width:260px;z-index:2}
+.float-card strong{display:block;font:800 20px/1.2 var(--f-head);color:var(--navy)}
+.float-card span:not(.icon-circle){display:block;font-size:14px;line-height:1.35;color:var(--muted)}
+.float-card .icon-circle{background:var(--sky-light);color:var(--blue)}
+.fc-1{top:44px;left:0}
+.fc-2{right:-8px;bottom:56px}
+@media (max-width:1023px){
+ .hk-panel{grid-template-columns:1fr;padding:48px 32px}
+ .hero-art{min-height:0;display:flex;flex-direction:column;gap:16px}
+ .ha-main .ph{position:relative;width:100%;height:auto;aspect-ratio:4/3;border-radius:28px}
+ .ha-small{display:none}
+ .float-card{position:static;max-width:none}
+}
+@media (max-width:767px){.hk-panel{padding:40px 20px;border-radius:24px}.hero-kind .hero-sub{font-size:18px}.join{flex-wrap:wrap}}
+
+/* partner strip */
+.logo-strip{padding:48px 0 8px}
+.logo-strip p{text-align:center;font-weight:600;color:var(--muted);font-size:15px;margin-bottom:20px}
+.logo-strip ul{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;list-style:none}
+.logo-strip .logo-ph{height:64px;border-radius:14px;font-size:14px}
+@media (max-width:767px){.logo-strip ul{grid-template-columns:repeat(2,1fr)}.logo-strip li:last-child{display:none}}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about-art{position:relative;padding-bottom:48px}
+.aa-1 .ph{width:76%;aspect-ratio:4/5;border-radius:28px}
+.aa-2 .ph{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:1/1;border-radius:24px;border:8px solid #fff;box-shadow:var(--shadow-lift)}
+.aa-2 .ph-cap{display:none}
+.since{position:absolute;top:32px;right:6%;width:136px;height:136px;border-radius:50%;background:var(--gold);color:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 16px 32px rgba(226,160,39,.35);border:6px solid #fff}
+.since strong{font:800 32px/1 var(--f-head)}
+.since span{font-size:12px;font-weight:600;max-width:90px;line-height:1.25;margin-top:4px}
+.mini-feats{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0;padding:24px 0;border-block:1px solid var(--line)}
+.mini-feats h3{font-size:18px;margin:12px 0 4px}
+.mini-feats p{font-size:16px;color:var(--muted);margin:0}
+@media (max-width:1023px){.about-grid{grid-template-columns:1fr;gap:48px}}
+@media (max-width:639px){.aa-1 .ph{width:100%;aspect-ratio:4/3}.aa-2{display:none}.since{top:auto;bottom:24px;right:auto;left:16px;width:112px;height:112px}.mini-feats{grid-template-columns:1fr}}
+
+/* cards */
+.card{border:1px solid var(--line);box-shadow:var(--shadow);border-radius:24px}
+.card-lift:hover,.card-lift:focus-within{transform:translateY(-6px);box-shadow:var(--shadow-lift)}
+.pc-media{position:relative;padding:10px 10px 0}
+.pc-media .ph{border-radius:18px;aspect-ratio:4/3;margin:0}
+.card>.ph{margin:10px 10px 0;width:auto;border-radius:18px}
+.pc-badge{position:absolute;left:30px;bottom:-24px;width:56px;height:56px;border-radius:16px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 24px rgba(11,118,209,.3);border:4px solid #fff}
+.pc-badge .icon{width:24px;height:24px}
+.prog-card .card-body{padding-top:40px}
+.pc-media .ph-cap{right:auto;max-width:calc(100% - 32px);background:rgba(255,255,255,.9);padding:4px 8px;border-radius:8px}
+.prog-card .pc-media .ph-cap{top:16px;bottom:auto}
+.icon-circle,.bg-sand .icon-circle{border-radius:14px;background:var(--sky-light);color:var(--blue)}
+.bg-sand .icon-circle{background:#fff}
+
+/* causes */
+.tag{position:absolute;top:22px;left:22px;display:inline-flex;align-items:center;gap:6px;background:#fff;color:var(--navy);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;box-shadow:0 6px 16px rgba(14,37,65,.12)}
+.tag .icon{width:15px;height:15px;color:var(--blue)}
+.cause .ph-cap{display:none}
+.cause .card-body{gap:12px}
+.progress{height:10px;border-radius:999px;background:#E8EEF5;overflow:hidden;margin-top:8px}
+.progress span{display:block;height:100%;width:100%;background:repeating-linear-gradient(45deg,#CFE6F8 0 8px,#E8F2FB 8px 16px)}
+.prog-meta{display:flex;justify-content:space-between;font-size:15px;color:var(--muted);margin-bottom:8px}
+.prog-meta strong{color:var(--navy)}
+
+/* impact panel */
+.bg-teal{background:#fff;border:0;padding:24px 0}
+.bg-teal>.container{max-width:1248px;padding:0 16px}
+.bg-teal>.container>*{position:relative}
+.bg-teal>.container{position:relative}
+.bg-teal>.container::before{content:"";position:absolute;inset:0 16px;border-radius:32px;background:radial-gradient(40% 70% at 100% 0%,rgba(125,211,252,.55),transparent 60%),linear-gradient(120deg,var(--navy) 0%,#0B4A8F 55%,var(--blue) 100%);z-index:0}
+.bg-teal>.container>h2,.bg-teal>.container>.grid-4,.bg-teal>.container>figure{margin-left:56px;margin-right:56px}
+.bg-teal>.container>h2{padding-top:64px;margin-bottom:0;color:#fff}
+.bg-teal>.container>.grid-4{padding:40px 0 64px}
+.bg-teal>.container>.grid-4:first-child{padding-top:64px}
+.bg-teal>.container>figure{padding-bottom:64px;margin-top:-24px}
+.bg-teal .stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:20px;box-shadow:none;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.bg-teal .stat-icon{color:var(--sky)}
+.bg-teal .stat-num,.bg-teal .stat-num .tbd{-webkit-text-fill-color:#fff;color:#fff;font-family:var(--f-head);font-weight:800}
+.bg-teal .stat-label{color:#DCE8F5}
+.impact-quote blockquote p{color:#fff}
+@media (max-width:767px){.bg-teal>.container>h2,.bg-teal>.container>.grid-4,.bg-teal>.container>figure{margin-left:24px;margin-right:24px}.bg-teal>.container>h2{padding-top:40px}.bg-teal>.container>.grid-4{padding:24px 0 40px}.bg-teal>.container>.grid-4:first-child{padding-top:40px}}
+
+/* help band as rounded strip */
+.help-band{background:none;border:0;padding:24px 0}
+.help-band>.container{max-width:1200px;margin:0 max(16px,calc((100% - 1200px)/2));background:var(--cream);border:1px solid #F3DFB4;border-radius:24px;padding:28px 36px}
+.help-band p{font-family:var(--f-head);font-weight:800;font-size:24px}
+.help-band p .icon{width:28px;height:28px;color:var(--gold-dark)}
+@media (max-width:767px){.help-band>.container{padding:24px}.help-band p{font-size:20px}}
+
+/* give section */
+.give-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center}
+.give-grid .quick-give{position:static;transform:none;width:auto;max-width:none;margin:0;order:0;border-radius:24px;box-shadow:var(--shadow-lift)!important;border:1px solid var(--line)}
+.breakdown{list-style:none;display:grid;gap:20px;margin-top:32px}
+.bd-row{display:flex;justify-content:space-between;align-items:center;font-weight:600;color:var(--navy)}
+.bd-row span{display:flex;align-items:center;gap:10px}
+.bd-row .icon{color:var(--blue);width:20px;height:20px}
+.give-grid .trust-row{margin-top:24px;font-size:15px}
+@media (max-width:1023px){.give-grid{grid-template-columns:1fr;gap:48px}}
+
+/* event spotlight */
+.ev-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+.spot{display:grid;grid-template-columns:1fr 1fr;padding:10px;gap:0}
+.spot-media .ph{height:100%;min-height:320px;border-radius:18px}
+.spot-body{padding:24px 24px 24px 32px;display:flex;flex-direction:column;gap:12px}
+.spot-body h3{font-size:28px;margin:0}
+.spot-body p{color:var(--muted);margin:0}
+.tag-inline{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;background:var(--cream);color:#8A5A00;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700}
+.tag-inline .icon{width:15px;height:15px}
+.spot-meta{list-style:none;display:grid;gap:8px;color:var(--navy);font-weight:600}
+.spot-meta li{display:flex;align-items:center;gap:10px}
+.spot-meta .icon{color:var(--blue);width:20px;height:20px}
+.ev-side{display:grid;gap:24px}
+.date-block{background:var(--sky-light);color:var(--navy);border-radius:16px;border:0;box-shadow:none}
+.date-block .d{font-family:var(--f-head);font-weight:800}
+@media (max-width:1023px){.ev-grid{grid-template-columns:1fr}}
+@media (max-width:639px){.spot{grid-template-columns:1fr}.spot-media .ph{min-height:0;aspect-ratio:4/3}.spot-body{padding:20px 12px 12px}}
+
+/* testimonials */
+.testi{margin:0;padding:32px;position:relative}
+.testi .q{position:absolute;top:12px;right:24px;font:800 96px/1 Georgia,serif;color:var(--sky-mid)}
+.testi blockquote{margin:0 0 24px}
+.testi blockquote p{font-size:18px;color:var(--ink);position:relative}
+.testi figcaption{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:20px;border-top:1px solid var(--line)}
+.testi figcaption span:last-child{display:flex;flex-direction:column;font-size:14px;color:var(--muted)}
+.testi figcaption strong{color:var(--navy);font-size:16px}
+.testi .avatar{width:48px;height:48px;margin:0;font-size:18px;background:linear-gradient(135deg,#D9F0FD,#7DD3FC);box-shadow:none;color:var(--navy)}
+
+/* volunteer split */
+.vol-split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;background:var(--cream);border-radius:32px;padding:56px;border:1px solid #F3DFB4}
+.vol-split>.ph{aspect-ratio:4/3;border-radius:24px;border:6px solid #fff}
+.vol-split .chips li{background:#fff;border:1px solid #F0D9A8;color:var(--navy)}
+.vol-split .chips .icon{color:var(--gold-dark)}
+@media (max-width:1023px){.vol-split{grid-template-columns:1fr;padding:40px 24px;gap:32px}}
+
+/* closing CTA panel (all pages) */
+.cta-inner{max-width:1200px;padding:72px 32px;border-radius:32px;background:radial-gradient(45% 70% at 100% 0%,var(--sky-mid),transparent 60%),radial-gradient(40% 60% at 0% 100%,#FFF1D6,transparent 60%),linear-gradient(135deg,var(--sky-light),#F7FBFF 60%,var(--cream))}
+.container.cta-inner{width:calc(100% - 32px)}
+.cta-inner .lead{max-width:560px}
+.cta-icon,.bg-white .cta-icon{background:#fff;color:var(--blue);border-radius:18px;box-shadow:var(--shadow)}
+.sec-head h2,.cta-inner h2{text-decoration:none}
+
+/* navy footer */
+.site-footer{background:radial-gradient(40% 60% at 100% 0%,rgba(56,189,248,.18),transparent 60%),var(--charcoal);padding-top:96px}
+.f-news input[type=email]{background:#13304F;border-color:#2A4A70}
+.site-footer .btn-light{border-radius:999px}
+.site-footer .social:hover{background:var(--gold);border-color:var(--gold)}
+
+/* inner-page bits */
+.chip-btn{border-radius:999px}
+.table-wrap{border-radius:24px}
+.panel{border-radius:24px}
+.story .ph{border-radius:200px 200px 24px 24px;aspect-ratio:4/5;max-width:460px}
+
+.spot{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.ev-grid{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}
+.float-card span:not(.icon-circle){display:inline}
+.float-card>div>span{display:block}
+.ha-main .ph-cap{top:42%;bottom:auto}
+.aa-1 .ph-cap{top:20px;bottom:auto}
+@media (max-width:1023px){.ev-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:639px){.spot{grid-template-columns:minmax(0,1fr)}}
+
+/* ================= Soft red + blue ================= */
+:root{--red:#D63441;--red-dark:#B82A36;--red-soft:#F87171;--rose:#FFF1F2;--rose-mid:#FFE4E6;--rose-line:#FBD5D9;
+ --gold:#D63441;--gold-dark:#B82A36;--cream:#FFF1F2}
+/* buttons */
+.btn-primary{background:var(--red);border-color:var(--red);color:#fff}
+.btn-primary:hover{background:var(--red-dark);border-color:var(--red-dark)}
+.btn-arrow{background:rgba(255,255,255,.22);color:#fff}
+.btn-secondary .btn-arrow{background:var(--navy)}
+/* logo wordmark */
+.wm-b{background:none;-webkit-text-fill-color:var(--red);color:var(--red)}
+.f-logo .wm-b{-webkit-text-fill-color:#FF8A94;color:#FF8A94}
+/* top bar link */
+.tb-help{color:#FFA3AB!important}
+/* warm panels become soft rose */
+.hk-panel,.cta-inner{background:radial-gradient(45% 65% at 100% 0%,var(--sky-mid) 0%,transparent 60%),radial-gradient(40% 60% at 0% 100%,var(--rose-mid) 0%,transparent 60%),linear-gradient(135deg,var(--sky-light) 0%,#F8FBFF 55%,var(--rose) 100%)}
+.hero::before,.photo-hero::before,.page-head::before{background:radial-gradient(50% 70% at 100% 0%,var(--sky-mid) 0%,transparent 60%),radial-gradient(40% 60% at 0% 100%,var(--rose-mid) 0%,transparent 60%),linear-gradient(135deg,var(--sky-light) 0%,#F8FBFF 60%,var(--rose) 100%)}
+.help-band>.container,.vol-split{background:var(--rose);border-color:var(--rose-line)}
+.help-band p .icon,.vol-split .chips .icon{color:var(--red)}
+.vol-split .chips li{border-color:var(--rose-line)}
+.tag-inline{background:var(--rose);color:var(--red-dark)}
+.terra-banner{background:var(--rose);border-bottom-color:var(--rose-line)}
+.terra-banner .icon{color:var(--red)}
+/* badges and accents */
+.since{background:var(--red);color:#fff;box-shadow:0 16px 32px rgba(214,52,65,.32)}
+.avatars span:first-child{background:linear-gradient(135deg,var(--rose-mid),#FDA4AF)}
+.steps li::before,.thanks .icon-circle{background:var(--red);color:#fff}
+.impact-quote blockquote p::before,.story-quote blockquote::before{color:#FDA4AF}
+.testi .q{color:var(--rose-mid)}
+.qg-tabs button[aria-pressed=true]{border-bottom-color:var(--red)}
+.qg-amts button[aria-pressed=true]{border-left-color:var(--red)}
+input:focus-visible,select:focus-visible,textarea:focus-visible{border-left-color:var(--red)}
+.site-footer .social:hover{background:var(--red);border-color:var(--red);color:#fff}
+.float-card .icon-circle:not(:first-child){color:var(--red)}
+.fc-2 .icon-circle{background:var(--rose);color:var(--red)}
+.pc-badge{background:var(--blue)}
+.cause .tag .icon{color:var(--red)}
+.mini-feats div:nth-child(2) .icon-circle{background:var(--rose);color:var(--red)}
+
+.cta-icon,.bg-white .cta-icon{color:var(--red)}
+.site-footer .socials{display:flex;flex-wrap:wrap;gap:8px}
+.float-card>div>span{line-height:1.35}
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
- <linearGradient id="mc-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6D27A"/><stop offset=".55" stop-color="#E3A72F"/><stop offset="1" stop-color="#B9831A"/></linearGradient>
- <linearGradient id="mc-gold-in" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9992A"/><stop offset="1" stop-color="#9A6E12"/></linearGradient>
+ <linearGradient id="mc-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8A94"/><stop offset=".55" stop-color="#E5484D"/><stop offset="1" stop-color="#B82A36"/></linearGradient>
+ <linearGradient id="mc-gold-in" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D63441"/><stop offset="1" stop-color="#9F1F2B"/></linearGradient>
  <linearGradient id="mc-silver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".45" stop-color="#D3D9DE"/><stop offset="1" stop-color="#8C969E"/></linearGradient>
  <radialGradient id="mc-bg" cx=".4" cy=".35" r=".75"><stop offset="0" stop-color="#24529A"/><stop offset="1" stop-color="#0B1F45"/></radialGradient>
  <mask id="mc-cres"><rect width="64" height="64" fill="#fff"/><circle cx="36.5" cy="28.5" r="20" fill="#000"/></mask>
@@ -717,6 +1016,7 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g
 
 /* ---------- Icons (Lucide-style, 2px stroke) ---------- */
 const I={
+plus:'<path d="M12 5v14M5 12h14"/>',
 heart:'<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>',
 'hand-heart':'<path d="M11 14h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/><path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 15 6 6"/><path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z"/>',
 users:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
@@ -942,15 +1242,15 @@ const DETAIL={
 
 /* ---------- Component helpers ---------- */
 function btn(text,o){o=o||{};const cls=`btn btn-${o.kind||'primary'}${o.lg?' btn-lg':''}${o.block?' btn-block':''}`;const ic=o.icon?icon(o.icon):'';
- if(o.scroll)return `<button type="button" class="${cls}" data-scroll="${o.scroll}"${o.extra||''}>${ic}${text}</button>`;
- return `<a class="${cls}" href="${o.href}"${o.extra||''}>${ic}${text}</a>`;}
+ if(o.scroll)return `<button type="button" class="${cls}" data-scroll="${o.scroll}"${o.extra||''}>${ic}${text}${o.arrow?`<span class="btn-arrow">${icon('arrow-right')}</span>`:''}</button>`;
+ return `<a class="${cls}" href="${o.href}"${o.extra||''}>${ic}${text}${o.arrow?`<span class="btn-arrow">${icon('arrow-right')}</span>`:''}</a>`;}
 const ph=(cap,ratio,cls)=>`<div class="ph${cls?' '+cls:''}" role="img" aria-label="Photo placeholder: ${esc(cap)}"${ratio?` style="aspect-ratio:${ratio}"`:''}><span class="ph-cap">${icon('image')}<span>Photo: ${cap}</span></span></div>`;
 const secHead=(t,sub,o)=>{o=o||{};return `<div class="sec-head${o.center?' center':''}">${o.eyebrow?`<p class="eyebrow">${o.eyebrow}</p>`:''}<h2${o.id?` id="${o.id}"`:''}>${t}</h2>${sub?`<p class="lead">${sub}</p>`:''}</div>`};
 function stat(s){
  const num=s.count?`<span aria-hidden="true" data-count="${s.count}" data-suffix="${s.suffix||''}">${s.n}</span><span class="sr-only">${s.n}</span>`:s.n;
  return `<div class="stat">${icon(s.icon,'stat-icon')}<p class="stat-num">${num}</p><p class="stat-label">${s.label}</p></div>`;}
 const impactStrip=(stats,o)=>{o=o||{};return `<section class="section bg-teal pattern on-dark"${o.label?` aria-labelledby="${o.label}"`:' aria-label="Our impact"'}><div class="container">${o.title?`<h2 id="${o.label}">${o.title}</h2>`:''}<div class="grid-4"${o.title?' style="margin-top:32px"':''}>${stats.map(stat).join('')}</div>${o.quote?`<figure class="impact-quote"><blockquote><p>\u201C${o.quote.q}\u201D</p></blockquote><figcaption>${o.quote.who} · ${sample}</figcaption></figure>`:''}</div></section>`};
-const progCard=p=>`<article class="card card-lift">${ph(p.photo)}<div class="card-body"><h3 class="card-title">${icon(p.icon)}${p.name}</h3><p>${p.line}</p><a class="text-link stretched" href="#/programs/${p.slug}">See the program<span class="sr-only">: ${p.name}</span>${icon('arrow-right')}</a></div></article>`;
+const progCard=p=>`<article class="card card-lift prog-card"><div class="pc-media">${ph(p.photo)}<span class="pc-badge">${icon(p.icon)}</span></div><div class="card-body"><h3 class="card-title">${p.name}</h3><p>${p.line}</p><a class="text-link stretched" href="#/programs/${p.slug}">See the program<span class="sr-only">: ${p.name}</span>${icon('arrow-right')}</a></div></article>`;
 const eventCard=e=>`<article class="card card-lift event" data-cat="${e.cat}"><div class="date-block" aria-hidden="true"><span class="d">[DD]</span><span class="m">[Mon]</span></div><div class="event-body"><p class="event-tag">${CATS[e.cat]}</p><h3 class="event-title">${e.title}</h3><p class="sr-only">Date: [date]</p><p class="event-meta">${icon('map-pin')}${e.city}</p><p class="event-meta">${icon('clock')}[time]</p><button type="button" class="text-btn" data-toast="A calendar invite will be ready once the date is set. [placeholder]">${icon('calendar-plus')}Add to calendar<span class="sr-only">: ${e.title}</span></button></div></article>`;
 const helpBand=(text,b,href)=>`<section class="help-band" aria-label="Get help"><div class="container"><p>${icon('utensils')}<span>${text}</span></p>${btn(b,{href:href,kind:'white',lg:true})}</div></section>`;
 const story=(cap,q,name,role)=>`<div class="story">${ph(cap)}<figure class="story-quote"><p class="sample-label">[Sample story, replace with a real one]</p><blockquote><p>\u201C${q}\u201D</p></blockquote><figcaption><strong>${name}</strong><span>${role}</span></figcaption></figure></div>`;
@@ -968,27 +1268,73 @@ function fld(id,label,o){o=o||{};const type=o.type||'text';const req=o.optional?
 function form(o){return `<form class="form" id="${o.id}" novalidate data-thanks-title="${esc(o.tt)}" data-thanks="${esc(o.tx)}">${o.body}<div><button type="submit" class="btn btn-${o.kind||'primary'} btn-lg btn-block"${o.btnId?` id="${o.btnId}"`:''}>${o.btn}</button></div>${o.note?`<p class="form-note">${o.note}</p>`:''}</form><div class="form-status" role="status" aria-live="polite"></div>`}
 
 /* ---------- Pages ---------- */
+const CAUSES=[
+ {tag:'Food Pantry',icon:'package',t:'Fill a month of pantry boxes',d:'Groceries for families in our 8 pantry cities.',photo:'packed grocery boxes ready for pickup',fund:'food'},
+ {tag:'Refugee Support',icon:'sofa',t:'Furnish a home for a new family',d:'Beds, tables and kitchen kits for Afghan families starting over.',photo:'a furnished living room ready for a family',fund:'refugee'},
+ {tag:'Youth',icon:'graduation-cap',t:'Sponsor a RisingStar student',d:'$150 covers one month of tutoring and mentorship.',photo:'students working with a mentor (backs to camera)',fund:'youth'}];
+const causeCard=c=>`<article class="card card-lift cause"><div class="pc-media">${ph(c.photo)}<span class="tag">${icon(c.icon)}${c.tag}</span></div><div class="card-body"><h3 class="card-title">${c.t}</h3><p>${c.d}</p>
+ <div class="progress" role="img" aria-label="Funding progress: placeholder until real totals are added"><span></span></div>
+ <div class="prog-meta"><span><strong>$[X]</strong> raised</span><span>Goal <strong>$[X]</strong></span></div>
+ <a class="btn btn-secondary btn-block" href="#/donate?fund=${c.fund}">Give to this campaign</a></div></article>`;
+const TESTI=[
+ {q:'I came to pack boxes one Sunday. Now I bring my kids every month. It is the best part of our week.',who:'[First name]',role:'Pantry volunteer, [city]'},
+ {q:'We carried a dining table up three flights of stairs. The family ate their first dinner at it that night.',who:'[First name]',role:'Furniture mover'},
+ {q:'My son looks forward to Monday nights now. He has friends and mentors who check on him.',who:'[First name]',role:'RisingStar parent'}];
+const pill=(t,ic)=>`<p class="eyebrow">${ic?icon(ic):''}${t}</p>`;
 function pHome(){return `
-<section class="hero hero-home">
- <div class="container"><div class="hero-content on-dark">
-  <h1>Neighbors feeding neighbors.</h1>
+<section class="hero-kind" aria-labelledby="hero-h"><div class="container"><div class="hk-panel">
+ <div class="hk-text">
+  ${pill('Volunteer-run nonprofit · Chandler, Arizona','heart')}
+  <h1 id="hero-h">Neighbors <span class="hl">feeding</span> neighbors.</h1>
   <p class="hero-sub">Muslim Corps volunteers run food pantries in 8 cities, welcome refugee families and mentor young leaders.</p>
-  <div class="btn-row">${btn('Donate now',{href:'#/donate',lg:true})}${btn('Volunteer with us',{href:'#/volunteer',kind:'light',lg:true})}</div>
- </div></div>
+  <div class="btn-row">${btn('Donate now',{href:'#/donate',lg:true,arrow:true})}${btn('Volunteer with us',{href:'#/volunteer',kind:'secondary',lg:true})}</div>
+  <div class="join"><div class="avatars" aria-hidden="true"><span>A</span><span>S</span><span>M</span><span>${icon('plus')}</span></div><p><strong>[X]+ volunteers</strong> serve with us every month</p></div>
+ </div>
+ <div class="hero-art">
+  <div class="ha-main">${ph('volunteers packing grocery boxes, Chandler')}</div>
+  <div class="ha-small">${ph('a volunteer handing a grocery bag to a family (no faces)')}</div>
+  <div class="float-card fc-1"><span class="icon-circle">${icon('sofa')}</span><div><strong>1,000+</strong><span>pieces of furniture for refugee families</span></div></div>
+  <div class="float-card fc-2"><span class="icon-circle">${icon('calendar')}</span><div><strong>Next free pantry</strong><span>[Date] · [City]</span></div></div>
+ </div>
+</div></div></section>
+<section class="logo-strip" aria-label="Partners"><div class="container"><p>Working alongside local partners</p><ul>${[1,2,3,4,5].map(i=>`<li class="logo-ph" role="img" aria-label="Partner logo placeholder ${i}">[Partner logo ${i}]</li>`).join('')}</ul></div></section>
+<section class="section bg-white" aria-labelledby="about-h"><div class="container about-grid">
+ <div class="about-art"><div class="aa-1">${ph('volunteers smiling after a pantry shift')}</div><div class="aa-2">${ph('hands passing a grocery box')}</div><div class="since"><strong>2019</strong><span>Serving neighbors since</span></div></div>
+ <div>${pill('About us','users')}<h2 id="about-h">Faith in action, one neighbor at a time.</h2>
+  <p class="lead">Muslim Corps is a volunteer-powered nonprofit that feeds families, welcomes refugees and raises young leaders, living our faith through service to our neighbors.</p>
+  <div class="mini-feats"><div><span class="icon-circle">${icon('hand-heart')}</span><h3>Run by volunteers</h3><p>Every pantry, move and mentor session is powered by neighbors.</p></div><div><span class="icon-circle">${icon('globe')}</span><h3>Open to all</h3><p>We serve and welcome everyone, of every background.</p></div></div>
+  <ul class="list-check"><li>${icon('check')}<span>Free groceries in Arizona, California and Nevada</span></li><li>${icon('check')}<span>Furniture and supplies for newly arrived families</span></li><li>${icon('check')}<span>Tutoring and clubs for young people</span></li></ul>
+  <p style="margin-top:32px"><a class="text-link" href="#/about">Read our story${icon('arrow-right')}</a></p></div>
+</div></section>
+<section class="section bg-sand" aria-labelledby="prog-h"><div class="container">${pill('What we do','star')}${secHead('Six ways we serve our neighbors','All powered by volunteers, all open to everyone.',{id:'prog-h'})}<div class="grid-3">${PROGS.map(progCard).join('')}</div></div></section>
+${impactStrip([{icon:'users',n:'[X]',label:'families served each month'},{icon:'map-pin',n:'8',count:8,label:'pantry cities'},{icon:'sofa',n:'1,000+',count:1000,suffix:'+',label:'pieces of furniture for refugee families'},{icon:'hand-heart',n:'[X]',label:'volunteers'}],{title:'Our impact so far',label:'imp-h'})}
+<section class="section bg-white" aria-labelledby="cause-h"><div class="container"><div class="head-row"><div>${pill('Current campaigns','target')}${secHead('Help us reach this month’s goals',null,{id:'cause-h'})}</div><a class="text-link" href="#/donate">See all ways to give${icon('arrow-right')}</a></div>
+ <div class="grid-3">${CAUSES.map(causeCard).join('')}</div><p class="note-ph">[Add real campaign goals and totals, or remove the progress bars.]</p></div></section>
+${helpBand('Need groceries? Our next free pantry is [date] in [city].','See all dates','#/get-help')}
+<section class="section bg-sand" aria-labelledby="give-h"><div class="container give-grid">
+ <div>${pill('Where your gift goes','dollar')}<h2 id="give-h">Every dollar goes to work in our neighborhoods.</h2><p class="lead">Volunteers do the work, so your gift goes further.</p>
+  <ul class="breakdown">${[['package','Food and groceries'],['sofa','Refugee household support'],['graduation-cap','Youth programs'],['building','Operations and supplies']].map(r=>`<li><div class="bd-row"><span>${icon(r[0])}${r[1]}</span><strong>[X]%</strong></div><div class="progress" aria-hidden="true"><span></span></div></li>`).join('')}</ul>
+  <p class="note-ph">[Confirm percentages with the treasurer.]</p>${trustRow()}</div>
  <aside class="quick-give" aria-labelledby="qg-h"><h2 id="qg-h">Give in a minute</h2><p class="qg-sub">Your gift feeds families this month.</p>
   <p class="qg-label" id="qg-f">How often?</p><div class="qg-tabs" role="group" aria-labelledby="qg-f"><button type="button" data-qg-freq="monthly" aria-pressed="true">Monthly</button><button type="button" data-qg-freq="once" aria-pressed="false">One-time</button></div>
   <p class="qg-label" id="qg-a">Amount</p><div class="qg-amts" role="group" aria-labelledby="qg-a">${['25','50','100','250'].map(a=>`<button type="button" data-qg-amt="${a}" aria-pressed="${a==='50'}">$${a}</button>`).join('')}</div>
   <a class="btn btn-primary btn-lg btn-block" id="qg-go" href="#/donate?amount=50&freq=monthly">Donate $50 monthly</a>
-  <p class="qg-note">${icon('shield')}Registered 501(c)(3) · Tax-deductible</p>
- </aside></section>
-${impactStrip([{icon:'users',n:'[X]',label:'families served each month'},{icon:'map-pin',n:'8',count:8,label:'pantry cities'},{icon:'sofa',n:'1,000+',count:1000,suffix:'+',label:'pieces of furniture for refugee families'},{icon:'hand-heart',n:'[X]',label:'volunteers'}])}
-<section class="section bg-sand" aria-labelledby="prog-h"><div class="container">${secHead('Our programs','Six ways we serve our neighbors, all powered by volunteers.',{id:'prog-h'})}<div class="grid-3">${PROGS.map(progCard).join('')}</div></div></section>
-${helpBand('Need groceries? Our next free pantry is [date] in [city].','See all dates','#/get-help')}
-<section class="section bg-white" aria-labelledby="story-h"><div class="container">${secHead('Volunteer stories',null,{id:'story-h'})}${story('a volunteer stacking grocery boxes with her children','I came to pack boxes one Sunday. Now I bring my kids every month. It is the best part of our week.','[First name]','Pantry volunteer, [city]')}</div></section>
-<section class="section bg-sand" aria-labelledby="ev-h"><div class="container">${secHead('Upcoming events','Come help, or come celebrate with us.',{id:'ev-h'})}<div class="grid-3">${EVENTS.slice(0,3).map(eventCard).join('')}</div><p class="sec-foot"><a class="text-link" href="#/events">See all events${icon('arrow-right')}</a></p></div></section>
-<section class="section bg-teal on-dark" aria-labelledby="vc-h"><div class="container vol-call"><div><h2 id="vc-h">Give one Sunday a month.</h2><p class="lead">Pack groceries, hand out boxes or mentor a student. Pick the role that fits your life.</p><ul class="chips"><li>${icon('package')}Pantry packer</li><li>${icon('users')}Distribution crew</li><li>${icon('graduation-cap')}Youth mentor</li></ul></div><div>${btn('Volunteer with us',{href:'#/volunteer',kind:'light',lg:true})}</div></div></section>
-<section class="section bg-white" aria-labelledby="trust-h"><div class="container">${secHead('Partners and trust','We work alongside local organizations to reach more families.',{id:'trust-h'})}${logos()}
- <div class="trust-box"><div>${trustRow()}<p class="note">Many employers match gifts. Ask your HR team, then send us the form and we will confirm your gift.</p></div>${btn('Donate now',{href:'#/donate',lg:true})}</div></div></section>`}
+  <p class="qg-note">${icon('shield')}Registered 501(c)(3) · Tax-deductible</p></aside>
+</div></section>
+<section class="section bg-white" aria-labelledby="ev-h"><div class="container"><div class="head-row"><div>${pill('Events','calendar')}${secHead('Come help, or come celebrate',null,{id:'ev-h'})}</div><a class="text-link" href="#/events">See all events${icon('arrow-right')}</a></div>
+ <div class="ev-grid"><article class="card spot"><div class="spot-media">${ph('families picking up groceries at a pantry day (no faces)')}</div><div class="spot-body"><p class="tag-inline">${icon('star')}Next event</p><h3>Pantry day</h3>
+  <ul class="spot-meta"><li>${icon('calendar')}[Day, date]</li><li>${icon('clock')}[Time]</li><li>${icon('map-pin')}Chandler, AZ</li></ul><p>Help pack and hand out groceries for families. Everyone is welcome.</p>
+  <div class="btn-row">${btn('Pick a shift',{href:'#/volunteer'})}<button type="button" class="text-btn" data-toast="A calendar invite will be ready once the date is set. [placeholder]">${icon('calendar-plus')}Add to calendar</button></div></div></article>
+  <div class="ev-side">${EVENTS.slice(1,3).map(eventCard).join('')}</div></div></div></section>
+<section class="section bg-sand" aria-labelledby="t-h"><div class="container">${pill('Stories','heart')}${secHead('What our neighbors say',null,{id:'t-h'})}<p class="sample-label">[Sample stories, replace with real ones]</p>
+ <div class="grid-3">${TESTI.map((t,i)=>`<figure class="card testi"><span class="q" aria-hidden="true">“</span><blockquote><p>${t.q}</p></blockquote><figcaption><span class="avatar" aria-hidden="true">${'ABC'[i]}</span><span><strong>${t.who}</strong>${t.role}</span></figcaption></figure>`).join('')}</div></div></section>
+<section class="section bg-white" aria-labelledby="vc-h"><div class="container"><div class="vol-split">
+ <div>${pill('Volunteer','hand-heart')}<h2 id="vc-h">Give one Sunday a month.</h2><p class="lead">Pack groceries, hand out boxes or mentor a student. Pick the role that fits your life.</p>
+  <ul class="chips"><li>${icon('package')}Pantry packer</li><li>${icon('users')}Distribution crew</li><li>${icon('graduation-cap')}Youth mentor</li></ul>
+  <div class="btn-row" style="margin-top:32px">${btn('Volunteer with us',{href:'#/volunteer',kind:'secondary',lg:true})}</div></div>
+ ${ph('teen volunteers loading boxes into a car trunk')}
+</div></div></section>
+${ctaBand({title:'Be the reason a family eats tonight.',text:'Monthly gifts help us plan every pantry day with confidence.',btn:'Donate now',href:'#/donate',bg:'bg-white',icon:'heart'})}`}
 
 function pAbout(){return `
 ${pageHead('About Muslim Corps','Muslim Corps is a volunteer-powered nonprofit that feeds families, welcomes refugees and raises young leaders, living our faith through service to our neighbors.','Our story')}
@@ -1158,17 +1504,18 @@ function chrome(){
  let demoHidden=false;try{demoHidden=sessionStorage.getItem('mc-demo')==='1'}catch(e){}
  $('#chrome-top').innerHTML=`
 ${demoHidden?'':`<div class="demo-banner" id="demo-banner" role="region" aria-label="Demo notice"><div class="container"><p>${icon('info')}<span><strong>Design demo, not the live site.</strong> Content in [brackets] is placeholder.</span></p><button type="button" class="icon-btn" data-dismiss="demo-banner" aria-label="Dismiss demo notice">${icon('x')}</button></div></div>`}
+<div class="topbar"><div class="container"><ul><li>${icon('phone')}<a href="${TEL}">${PHONE}</a></li><li>${icon('mail')}<a href="mailto:${EMAIL}">${EMAIL}</a></li><li>${icon('map-pin')}Chandler, Arizona</li></ul><a class="tb-help" href="#/get-help">Need food? Find a free pantry${icon('arrow-right')}</a></div></div>
 <header class="site-header"><div class="container header-inner">
  <a class="logo" href="#/home" aria-label="Muslim Corps home">${MARK}${WORDMARK}</a>
  <nav class="main-nav" aria-label="Main"><ul>
   <li><a class="nav-link" href="#/about" data-nav="about">About</a></li>
   <li class="dropdown"><button type="button" class="nav-link" id="prog-btn" aria-expanded="false" aria-controls="prog-menu" data-nav="programs">Programs${icon('chevron-down')}</button>
-   <ul class="dropdown-menu" id="prog-menu" hidden>${PROGS.map(p=>`<li><a href="#/programs/${p.slug}">${icon(p.icon)}${p.name}</a></li>`).join('')}<li class="all"><a href="#/programs">${icon('arrow-right')}All programs</a></li></ul></li>
+   <ul class="dropdown-menu mega" id="prog-menu" hidden>${PROGS.map(p=>`<li><a href="#/programs/${p.slug}"><span class="mm-ic">${icon(p.icon)}</span><span><strong>${p.name}</strong><small>${p.line}</small></span></a></li>`).join('')}<li class="all"><a href="#/programs">${icon('arrow-right')}All programs</a></li></ul></li>
   <li><a class="nav-link" href="#/get-help" data-nav="get-help">Get Help</a></li>
   <li><a class="nav-link" href="#/volunteer" data-nav="volunteer">Volunteer</a></li>
   <li><a class="nav-link" href="#/events" data-nav="events">Events</a></li>
  </ul></nav>
- <div class="header-actions">${btn('Donate',{href:'#/donate',icon:'heart'})}<button type="button" class="icon-btn menu-btn" id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">${icon('menu')}</button></div>
+ <div class="header-actions">${btn('Donate',{href:'#/donate',icon:'heart',extra:' id="hdr-donate"'})}<button type="button" class="icon-btn menu-btn" id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">${icon('menu')}</button></div>
 </div>
 <div class="mobile-menu" id="mobile-menu" hidden><nav aria-label="Mobile"><ul>
  <li><a class="help-link" href="#/get-help">${icon('utensils')}Get Help</a></li>
